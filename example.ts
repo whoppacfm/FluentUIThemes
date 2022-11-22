@@ -18,6 +18,23 @@ const myTheme_buttonStyles: IButtonStyles = {
 };
 
 const myTheme = createTheme({
+  defaultFontStyle: { fontFamily: 'Monaco, Menlo, Consolas', fontWeight: 'regular' },
+  fonts: {
+    small: {
+      fontSize: '11px'
+    },
+    medium: {
+      fontSize: '13px'
+    },
+    large: {
+      fontSize: '20px',
+      fontWeight: 'semibold'
+    },
+    xLarge: {
+      fontSize: '22px',
+      fontWeight: 'semibold'
+    }
+  },  
   components: { PrimaryButton: { styles: myTheme_buttonStyles } },
   palette: {
     themePrimary: '#15b053',
