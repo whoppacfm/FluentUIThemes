@@ -11,7 +11,14 @@ const appTheme: Theme = createTheme({
   }
 });
 
+const myTheme_buttonStyles: IButtonStyles = {
+  root: {
+    backgroundColor: 'yellow'
+  }
+};
+
 const myTheme = createTheme({
+  components: { PrimaryButton: { styles: myTheme_buttonStyles } },
   palette: {
     themePrimary: '#15b053',
     themeLighterAlt: '#010703',
